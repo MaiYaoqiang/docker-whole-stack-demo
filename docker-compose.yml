@@ -1,0 +1,13 @@
+version: "3.9"
+services:
+  backend:
+    image: maiyaoqiang/whole-stack-backend
+    ports:
+      #不要动
+      - "8686:7001"
+  frontend:
+    image: maiyaoqiang/whole-stack-frontend
+    ports:
+      #冒号前可以自定义前端端口号，冒号后不要动
+      - "80:80"
+
